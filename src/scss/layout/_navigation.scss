@@ -1,0 +1,104 @@
+.right{
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .dark__mode--button{
+        width: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        filter: invert(100%);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.container__bar{
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+.navigation{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    @include tablet{
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+        font-size: 1.8rem;
+        display: block;
+        text-align: center;
+        &:hover{
+            color: $green;
+            transition: ease .2s all;
+        }
+
+        @include tablet{
+            margin-right: 2rem;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/*----hamburger menu----*/
+.mobile__menu{
+    @include tablet{
+        display: none;
+    }
+    img{
+        width: 3.5rem;
+    }
+}
+.container__bh{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation__mobile{
+    @include tablet{
+        display: none;
+    }
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    border: 1px solid $grey;
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 0.4s ease-in-out, opacity 0.5s linear;
+}
+.navigation__mobile--modifier{
+    display: flex;
+    flex-direction: column;
+    a{
+        color: white;
+        font-size: 2rem;
+        &:hover{
+            color: $green;
+            transition: ease .2s all;
+        }
+    }
+}
+.show{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

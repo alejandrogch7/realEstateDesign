@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real State</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__content">
+            <div class="container__bar">
+                <div class="container__bh">                    
+                    <a href="/">
+                        <img src="build/img/logo.svg" alt="Logo">
+                    </a>
+                    <div class="mobile__menu">
+                        <img src="build/img/barras.svg" alt="Icon hamburger menu">
+                    </div>
+                </div>
+                <div class="navigation__mobile">
+                    <nav class="navigation__mobile--modifier">
+                        <a href="about.html">About</a>
+                        <a href="announcements.html">Announcements</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="right">
+                    <img src="build/img/dark-mode.svg" class="dark__mode--button" alt="">
+                    <nav class="navigation">
+                        <a href="about.html">About</a>
+                        <a href="announcements.html">Announcements</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container section content__centered">
+        <h1>Contact</h1>
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada.jpg" alt="Image for contact">
+        </picture>
+        <h2>Please fill up the form</h2>
+        <form action="" class="form">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your name here" id="name">
+                <label for="email">E-mail Address</label>
+                <input type="email" placeholder="Your email address here" id="email">
+                <label for="phone">Phone Number</label>
+                <input type="tel" placeholder="Your phone number here" id="phone">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Information about the property</legend>
+                <label for="options">Buy or Sell</label>
+                <select id="options">
+                    <option value="" disabled selected>- Select -</option>
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+                <label for="budget">Budget</label>
+                <input type="number" placeholder="The budget that you have" id="budget">
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <p>How would you like to be contacted?</p>
+                <div class="contact__method">
+                    <label for="contact__phone">By phone</label>
+                    <input type="radio" value="phone" name="contact" id="contact__phone">
+                    <label for="contact__email">By email</label>
+                    <input type="radio" value="email" name="contact" id="contact__email">
+                </div>
+                <p>If you chose by phone please give us a time to call you:</p>
+                <label for="date">Date</label>
+                <input type="date" id="date">
+                <label for="hour">Hour</label>
+                <input type="time" id="hour" min="09:00" max="18:00">
+            </fieldset>
+            <input type="submit" value="Send" class="button__green">
+        </form>
+    </main>
+    <footer class="footer section">
+        <div class="container footer__container">
+            <nav class="navigation">
+                <a href="about.html">About</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <p class="copyright">All rights reserved &copy;</p>
+    </footer>
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

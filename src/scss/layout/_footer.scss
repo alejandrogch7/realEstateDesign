@@ -1,0 +1,22 @@
+.footer{
+    padding: calc($separation / 2);
+    background-color: $darkGrey;
+    margin-bottom: 0;
+    
+    .footer-container{
+        padding-top: calc($separation / 2);
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        @include tablet{
+            flex-direction: row;
+        }
+    }
+    .copyright{
+        color: $white;
+        text-align: center;
+    }
+}

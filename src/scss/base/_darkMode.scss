@@ -1,0 +1,41 @@
+.darkMode{
+    background-color: darken($darkGrey,10);
+    p,blockquote{
+        color: white;
+    }
+    a,h1,h2,h3,h4{
+        color: $grey;
+    }
+    .announcement{
+        background-color: $darkGrey;
+        border: 1px solid $darkGrey;
+        .price{
+            color: $green;
+        }
+        .icon{
+            filter: invert(100%);
+        }
+    }
+    .property__summary{
+        .iconA{
+            filter: invert(100%);
+        }
+        .price{
+            color: $green;
+        }
+    }
+    .form{
+        color: white;
+        fieldset{
+            legend,p{
+                color: white;
+            }
+        }
+        input:not([type="submit"]),
+        textarea,
+        select {
+            background-color: $darkGrey;
+            border: 1px solid $darkGrey;
+        }
+    }
+}

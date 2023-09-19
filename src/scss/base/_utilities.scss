@@ -1,0 +1,11 @@
+.section {
+    margin-top: calc($separation / 2);
+    margin-bottom: calc($separation / 2);
+}
+.content__centered {
+    max-width: 80rem;
+}
+.align__right{
+    display: flex;
+    justify-content: flex-end;
+}
